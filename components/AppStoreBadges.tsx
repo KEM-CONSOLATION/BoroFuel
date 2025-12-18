@@ -63,9 +63,7 @@ export default function AppStoreBadges({ className = '', size = 'md' }: AppStore
           <span className={`${textSizes[size].small} font-normal leading-tight opacity-90`}>
             GET IT ON
           </span>
-          <span className={`${textSizes[size].large} font-semibold leading-tight`}>
-            Play Store
-          </span>
+          <span className={`${textSizes[size].large} font-semibold leading-tight`}>Play Store</span>
         </div>
       </Link>
     </div>

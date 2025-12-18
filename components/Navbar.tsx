@@ -21,8 +21,9 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'glass shadow-lg' : 'bg-white/80 shadow-sm backdrop-blur-sm'
-        }`}
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled ? 'glass shadow-lg' : 'bg-white/80 shadow-sm backdrop-blur-sm'
+      }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">

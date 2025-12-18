@@ -75,32 +75,51 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.3 }}
               className="relative"
             >
-              <div className="relative h-[400px] overflow-hidden rounded-3xl shadow-2xl sm:h-[500px] lg:h-[600px]">
-                {/* Gradient overlay */}
-                <div className="absolute inset-0 z-10 bg-gradient-to-tr from-primary-600/20 via-transparent to-secondary-600/20" />
-                <Image
-                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
-                  alt="Modern fuel station"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-                {/* Floating badge */}
+              <div className="relative flex items-center justify-center">
+                {/* Main phone mockup */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.6 }}
-                  className="glass absolute bottom-6 left-6 right-6 z-20 rounded-2xl p-4 shadow-xl"
+                  transition={{ duration: 0.8, delay: 0.5 }}
+                  className="relative z-10"
                 >
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary-500 to-primary-600 shadow-lg">
-                      <Fuel className="h-6 w-6 text-white" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-bold text-gray-900">Trusted by Drivers</p>
-                      <p className="text-xs text-gray-600">Secure & Reliable Platform</p>
-                    </div>
-                  </div>
+                  <Image
+                    src="/assets/apple 5.jpg"
+                    alt="Create Account - Borofuel App"
+                    width={300}
+                    height={600}
+                    className="h-auto w-[280px] rounded-[2.5rem] shadow-2xl sm:w-[320px]"
+                    priority
+                  />
+                </motion.div>
+                {/* Floating phone mockups */}
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.7 }}
+                  className="absolute -left-8 top-12 z-0 hidden lg:block"
+                >
+                  <Image
+                    src="/assets/apple 4.jpg"
+                    alt="Get Fuel - Borofuel App"
+                    width={200}
+                    height={400}
+                    className="h-auto w-[180px] rounded-[2rem] opacity-80 shadow-xl"
+                  />
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0, x: 30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.9 }}
+                  className="absolute -right-8 bottom-12 z-0 hidden lg:block"
+                >
+                  <Image
+                    src="/assets/apple 6.jpg"
+                    alt="Fuel Settlements - Borofuel App"
+                    width={200}
+                    height={400}
+                    className="h-auto w-[180px] rounded-[2rem] opacity-80 shadow-xl"
+                  />
                 </motion.div>
               </div>
               {/* Decorative elements */}
@@ -198,8 +217,75 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* App Showcase Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-50 to-blue-50/30 py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16 text-center"
+          >
+            <div className="mb-4 inline-block rounded-full bg-gradient-to-r from-primary-100 to-secondary-100 px-4 py-2 text-sm font-semibold text-primary-700">
+              App Preview
+            </div>
+            <h2 className="mb-4 text-3xl font-extrabold text-gray-900 sm:text-4xl lg:text-5xl">
+              Experience the <span className="gradient-text">Borofuel App</span>
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg text-gray-600 sm:text-xl">
+              See how easy it is to access fuel with our intuitive mobile application
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4 lg:gap-8">
+            {[
+              {
+                src: '/assets/apple 5.jpg',
+                alt: 'Create Account - Borofuel App',
+                title: 'Create Account',
+              },
+              { src: '/assets/apple 4.jpg', alt: 'Get Fuel - Borofuel App', title: 'Get Fuel' },
+              {
+                src: '/assets/apple 6.jpg',
+                alt: 'Fuel Settlements - Borofuel App',
+                title: 'Fuel Settlements',
+              },
+              {
+                src: '/assets/apple 3 edit.jpg',
+                alt: 'Track Settlement - Borofuel App',
+                title: 'Track Settlement',
+              },
+            ].map((mockup, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="group"
+              >
+                <div className="relative overflow-hidden rounded-3xl shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl">
+                  <Image
+                    src={mockup.src}
+                    alt={mockup.alt}
+                    width={300}
+                    height={600}
+                    className="h-auto w-full rounded-3xl"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark-500/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-500/90 via-dark-500/70 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <p className="text-sm font-bold text-white">{mockup.title}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-white to-gray-50 py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <motion.div
@@ -209,13 +295,13 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="relative order-2 lg:order-1"
             >
-              <div className="relative h-[400px] overflow-hidden rounded-3xl shadow-2xl sm:h-[500px]">
-                <div className="absolute inset-0 z-10 bg-gradient-to-tr from-dark-600/30 via-transparent to-primary-600/20" />
+              <div className="relative flex items-center justify-center">
                 <Image
-                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80"
-                  alt="Transport vehicle"
-                  fill
-                  className="object-cover"
+                  src="/assets/apple 3 edit.jpg"
+                  alt="Track Settlement - Borofuel App"
+                  width={300}
+                  height={600}
+                  className="h-auto w-[280px] rounded-[2.5rem] shadow-2xl sm:w-[320px]"
                 />
               </div>
               {/* Decorative floating element */}

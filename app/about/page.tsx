@@ -78,21 +78,55 @@ export default function About() {
             </div>
           </motion.div>
 
+          {/* App Mockup Showcase */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative mb-16 overflow-hidden rounded-3xl shadow-2xl"
+            className="mb-16"
           >
-            <div className="relative h-[400px] sm:h-[500px]">
-              <div className="absolute inset-0 z-10 bg-gradient-to-tr from-primary-600/20 via-transparent to-secondary-600/20" />
-              <Image
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80"
-                alt="Modern fuel station"
-                fill
-                className="object-cover"
-              />
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-6">
+              {[
+                {
+                  src: '/assets/apple 5.jpg',
+                  alt: 'Create Account - Borofuel App',
+                  title: 'Create Account',
+                },
+                { src: '/assets/apple 4.jpg', alt: 'Get Fuel - Borofuel App', title: 'Get Fuel' },
+                {
+                  src: '/assets/apple 6.jpg',
+                  alt: 'Fuel Settlements - Borofuel App',
+                  title: 'Fuel Settlements',
+                },
+                {
+                  src: '/assets/apple 3 edit.jpg',
+                  alt: 'Track Settlement - Borofuel App',
+                  title: 'Track Settlement',
+                },
+              ].map((mockup, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                  className="group"
+                >
+                  <div className="relative overflow-hidden rounded-2xl shadow-lg transition-all duration-300 group-hover:scale-105 group-hover:shadow-2xl">
+                    <Image
+                      src={mockup.src}
+                      alt={mockup.alt}
+                      width={300}
+                      height={600}
+                      className="h-auto w-full rounded-2xl"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark-500/90 via-dark-500/70 to-transparent p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                      <p className="text-xs font-bold text-white sm:text-sm">{mockup.title}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
 
