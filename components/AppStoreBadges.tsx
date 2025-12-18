@@ -44,13 +44,13 @@ export default function AppStoreBadges({ className = '', size = 'md' }: AppStore
         </div>
       </Link>
 
-      {/* Google Play Badge */}
+      {/* Play Store Badge */}
       <Link
         href="https://play.google.com/store/apps/details?id=com.borofuel.app"
         target="_blank"
         rel="noopener noreferrer"
         className={`group relative flex ${badgeSizes[size]} items-center justify-center gap-3 overflow-hidden rounded-xl bg-black px-5 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl`}
-        aria-label="Get it on Google Play"
+        aria-label="Get it on Play Store"
       >
         <svg
           className={`${iconSizes[size]} flex-shrink-0 text-white`}
@@ -64,7 +64,7 @@ export default function AppStoreBadges({ className = '', size = 'md' }: AppStore
             GET IT ON
           </span>
           <span className={`${textSizes[size].large} font-semibold leading-tight`}>
-            Google Play
+            Play Store
           </span>
         </div>
       </Link>

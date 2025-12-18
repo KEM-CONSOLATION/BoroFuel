@@ -102,7 +102,7 @@ export default function SmartDownloadButton({
           </div>
         </Link>
 
-        {/* Google Play Badge */}
+        {/* Play Store Badge */}
         <Link
           href="https://play.google.com/store/apps/details?id=com.borofuel.app"
           target="_blank"
@@ -121,7 +121,7 @@ export default function SmartDownloadButton({
               GET IT ON
             </span>
             <span className={`${textSizes[size].large} font-semibold leading-tight`}>
-              Google Play
+              Play Store
             </span>
           </div>
         </Link>
@@ -143,7 +143,7 @@ export default function SmartDownloadButton({
         <Smartphone className="h-5 w-5" />
       )}
       <span>
-        {device === 'ios' || device === 'mac' ? 'Download on App Store' : 'Get it on Google Play'}
+        {device === 'ios' || device === 'mac' ? 'Download on App Store' : 'Get it on Play Store'}
       </span>
     </Link>
   );
