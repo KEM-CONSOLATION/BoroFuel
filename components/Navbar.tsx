@@ -21,9 +21,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'glass shadow-lg' : 'bg-white/80 shadow-sm backdrop-blur-sm'
-      }`}
+      className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? 'glass shadow-lg' : 'bg-white/80 shadow-sm backdrop-blur-sm'
+        }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
@@ -66,7 +65,6 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Mobile menu button */}
           <motion.button
             whileTap={{ scale: 0.95 }}
             className="rounded-lg bg-gradient-to-br from-primary-50 to-primary-100 p-2 text-primary-700 transition-all hover:from-primary-100 hover:to-primary-200 md:hidden"
