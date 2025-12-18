@@ -8,12 +8,21 @@ export const metadata: Metadata = {
     title: 'Privacy Policy - Borofuel',
     description:
       'Read the Borofuel Privacy Policy. Learn how we collect, use, and protect your data when using the Borofuel fuel access service.',
-    images: ['/logo.jpg'],
+    images: [
+      {
+        url: '/logo.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Borofuel Logo',
+      },
+    ],
   },
   twitter: {
+    card: 'summary_large_image',
     title: 'Privacy Policy - Borofuel',
     description:
       'Read the Borofuel Privacy Policy. Learn how we collect, use, and protect your data when using the Borofuel fuel access service.',
+    images: ['/logo.jpg'],
   },
 };
 
