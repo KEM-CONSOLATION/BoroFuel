@@ -78,12 +78,12 @@ export default function Terms() {
               <h2 className="mb-4 text-2xl font-bold text-gray-900">4. Fuel Settlement</h2>
               <ul className="ml-6 list-disc space-y-2 text-gray-700">
                 <li>
-                  Fuel usage is settled according to the association&apos;s internal operational
+                  Fuel usage is settled according to the company&apos;s internal operational
                   process.
                 </li>
                 <li>
-                  Drivers are expected to follow their association&apos;s procedures for fuel
-                  balance management.
+                  Drivers are expected to follow their company&apos;s procedures for fuel balance
+                  management.
                 </li>
                 <li>
                   Accounts may be temporarily restricted from accessing fuel in case of misuse or

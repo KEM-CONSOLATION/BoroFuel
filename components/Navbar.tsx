@@ -40,7 +40,7 @@ export default function Navbar() {
                 className="h-full w-full object-contain"
               />
             </div>
-            <span className="bg-gradient-to-r from-primary-600 to-primary-700 bg-clip-text text-xl font-bold text-transparent sm:text-2xl">
+            <span className="bg-gradient-to-r from-primary-500 to-black bg-clip-text text-xl font-bold text-transparent sm:text-2xl">
               Borofuel
             </span>
           </Link>

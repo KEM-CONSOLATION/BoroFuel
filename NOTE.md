@@ -45,7 +45,7 @@ Borofuel
 
 Borofuel is a fuel access and station-partner app that connects approved drivers with designated filling stations for seamless fuel collection.
 
-The app is designed for transport associations and their registered drivers. Drivers visit any approved partner filling station, authenticate their membership, and receive fuel according to the association’s existing arrangements with the station.
+The app is designed for transport companies and their registered drivers. Drivers visit any approved partner filling station, authenticate their membership, and receive fuel according to the company's existing arrangements with the station.
 
 No cash is provided and no personal lending activity takes place.
-Drivers simply settle their fuel usage through their association’s normal operational process, as managed internally by the association.
+Drivers simply settle their fuel usage through their company's normal operational process, as managed internally by the company.

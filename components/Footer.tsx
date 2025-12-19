@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { Phone, MapPin } from 'lucide-react';
 import SmartDownloadButton from '@/components/SmartDownloadButton';
 
 export default function Footer() {
@@ -29,8 +30,9 @@ export default function Footer() {
               <span className="text-2xl font-bold text-white">Borofuel</span>
             </div>
             <p className="mb-6 max-w-md text-base leading-relaxed text-gray-400">
+              Borofuel is a service provider that provides fuel access to registered drivers.
               Connecting approved drivers with designated filling stations for seamless fuel
-              collection. Experience the future of fuel management.
+              collection.
             </p>
             <div className="flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary-500 to-primary-600 shadow-lg">
@@ -66,8 +68,32 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Download App */}
+          {/* Contact & Download */}
           <div>
+            <h3 className="mb-4 text-lg font-bold text-white">Contact Us</h3>
+            <div className="mb-6 space-y-3 text-sm">
+              <div className="flex items-start gap-2">
+                <Phone className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary-400" />
+                <div>
+                  <a
+                    href="tel:+2349164245071"
+                    className="block text-gray-300 transition-colors hover:text-primary-400"
+                  >
+                    09164245071
+                  </a>
+                  <a
+                    href="tel:+2348120782708"
+                    className="block text-gray-300 transition-colors hover:text-primary-400"
+                  >
+                    08120782708
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-start gap-2">
+                <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary-400" />
+                <p className="text-gray-300">Port Harcourt, Nigeria</p>
+              </div>
+            </div>
             <h3 className="mb-4 text-lg font-bold text-white">Download App</h3>
             <p className="mb-4 text-sm text-gray-400">
               Get the Borofuel app on your mobile device for easy access on the go.

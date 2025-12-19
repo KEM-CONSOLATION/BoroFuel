@@ -3,11 +3,11 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'About Us',
   description:
-    'Learn about Borofuel - a fuel access platform designed for transport associations and their registered drivers. Discover how we connect approved drivers with designated filling stations.',
+    'Learn about Borofuel - a service provider that provides fuel access to registered drivers from transport companies. Discover how we connect approved drivers with designated filling stations.',
   openGraph: {
     title: 'About Borofuel',
     description:
-      'Learn about Borofuel - a fuel access platform designed for transport associations and their registered drivers.',
+      'Learn about Borofuel - a fuel access platform designed for transport companies and their registered drivers.',
     images: [
       {
         url: '/logo.jpg',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Borofuel',
     description:
-      'Learn about Borofuel - a fuel access platform designed for transport associations and their registered drivers.',
+      'Learn about Borofuel - a fuel access platform designed for transport companies and their registered drivers.',
     images: ['/logo.jpg'],
   },
 };

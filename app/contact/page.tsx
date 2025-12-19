@@ -35,7 +35,8 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-lg text-gray-600 sm:text-xl">
-              Have questions? We&apos;re here to help transport associations and partner stations.
+              Have questions? We&apos;re here to help. Contact Borofuel, your trusted fuel service
+              provider.
             </p>
           </motion.div>
         </div>
@@ -54,9 +55,9 @@ export default function Contact() {
             >
               <h2 className="mb-6 text-3xl font-bold text-gray-900">Contact Information</h2>
               <p className="mb-8 text-gray-600">
-                For transport associations interested in partnering with us, or for existing
-                partners needing support, please reach out through the form or contact details
-                below.
+                For transport companies interested in partnering with our fuel service, or for
+                existing partners needing support, please reach out through the form or contact
+                details below.
               </p>
 
               <div className="space-y-6">
@@ -76,7 +77,16 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="mb-1 font-semibold text-gray-900">Phone</h3>
-                    <p className="text-gray-600">Available upon request</p>
+                    <p className="text-gray-600">
+                      <a href="tel:+2349164245071" className="hover:text-primary-600">
+                        09164245071
+                      </a>
+                    </p>
+                    <p className="text-gray-600">
+                      <a href="tel:+2348120782708" className="hover:text-primary-600">
+                        08120782708
+                      </a>
+                    </p>
                   </div>
                 </div>
 
@@ -86,7 +96,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="mb-1 font-semibold text-gray-900">Office</h3>
-                    <p className="text-gray-600">Contact us for location details</p>
+                    <p className="text-gray-600">Port Harcourt, Nigeria</p>
                   </div>
                 </div>
               </div>

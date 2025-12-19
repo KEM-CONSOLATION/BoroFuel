@@ -52,7 +52,7 @@ export default function Drivers() {
             </h2>
             <p className="mb-6 text-center text-gray-600">
               Please enter your Organization ID Number to continue. This ID is provided by your
-              transport association.
+              transport company.
             </p>
             <form onSubmit={handleVerification}>
               <div className="mb-6">
@@ -78,7 +78,7 @@ export default function Drivers() {
               </button>
             </form>
             <p className="mt-4 text-center text-sm text-gray-500">
-              Don&apos;t have an Organization ID? Contact your transport association.
+              Don&apos;t have an Organization ID? Contact your transport company.
             </p>
           </motion.div>
         ) : (
@@ -115,9 +115,9 @@ export default function Drivers() {
         >
           <h3 className="mb-3 font-semibold text-gray-900">Security Notice</h3>
           <p className="text-sm text-gray-600">
-            Your Organization ID is verified against our secure database. Only registered drivers
-            from partner transport associations can access the system. Periodic re-verification may
-            be required for security purposes.
+            Your Organization ID is verified against our secure database. Borofuel provides fuel
+            access to registered drivers from partner transport companies. Periodic re-verification
+            may be required for security purposes.
           </p>
         </motion.div>
 

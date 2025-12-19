@@ -38,11 +38,12 @@ export default function Home() {
               <h1 className="mb-6 text-4xl font-extrabold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
                 <span className="gradient-text">Seamless Fuel Access</span>
                 <br />
-                <span className="text-gray-800">for Transport Associations</span>
+                <span className="text-gray-800">for Drivers</span>
               </h1>
 
               <p className="mb-8 text-lg leading-relaxed text-gray-600 sm:text-xl">
-                Connect approved drivers with designated filling stations. Experience a{' '}
+                Borofuel is a service provider that provides fuel access to registered drivers.
+                Experience a{' '}
                 <span className="font-semibold text-primary-600">
                   simple, secure, and streamlined
                 </span>{' '}
@@ -153,7 +154,7 @@ export default function Home() {
               <span className="gradient-text-blue">Simple</span> & Powerful
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-gray-600 sm:text-xl">
-              A secure system designed for transport associations and their registered drivers.
+              A secure system designed for registered and verified drivers.
             </p>
           </motion.div>
 
@@ -162,16 +163,14 @@ export default function Home() {
               {
                 icon: Users,
                 title: 'Verified Drivers',
-                description:
-                  'Only registered drivers from partner transport associations can access the system.',
+                description: 'Only registered and verified drivers can have access to the system.',
                 gradient: 'from-blue-500 to-blue-600',
                 bgGradient: 'from-blue-50 to-blue-100',
               },
               {
                 icon: Shield,
                 title: 'Secure Verification',
-                description:
-                  'Organization ID verification ensures only authorized personnel can use the service.',
+                description: 'ID verification ensures only authorised persons can use the service.',
                 gradient: 'from-primary-500 to-primary-600',
                 bgGradient: 'from-orange-50 to-orange-100',
               },
@@ -336,13 +335,13 @@ export default function Home() {
                 <span className="gradient-text">Streamlined</span> Operations
               </h2>
               <p className="mb-8 text-lg leading-relaxed text-gray-600 sm:text-xl">
-                Our platform simplifies fuel access for transport associations, making it easy for
-                drivers to get what they need when they need it.
+                Our platform simplifies fuel access for drivers, making it easy to get what they and
+                when they need it.
               </p>
               <ul className="space-y-5">
                 {[
                   { text: 'No cash transactions required', icon: '💳' },
-                  { text: 'Settlement through association processes', icon: '🔄' },
+                  { text: 'Settlement through company processes', icon: '🔄' },
                   { text: 'Secure organization verification', icon: '🔒' },
                   { text: 'Access at approved partner stations', icon: '⛽' },
                 ].map((benefit, index) => (
@@ -395,7 +394,7 @@ export default function Home() {
               Ready to Get Started?
             </h2>
             <p className="mb-10 text-lg leading-relaxed text-gray-100 sm:text-xl">
-              If you&apos;re a registered driver from a partner transport association,{' '}
+              If you&apos;re a registered driver from a partner transport company,{' '}
               <span className="font-semibold">download the app</span> to get started today.
             </p>
 

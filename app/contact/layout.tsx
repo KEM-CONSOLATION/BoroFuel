@@ -3,11 +3,11 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Contact Us',
   description:
-    'Get in touch with Borofuel. For transport associations interested in partnering with us, or for existing partners needing support, contact us today.',
+    'Get in touch with Borofuel. For transport companies interested in partnering with our fuel service, or for existing partners needing support, contact us today.',
   openGraph: {
     title: 'Contact Borofuel',
     description:
-      'Get in touch with Borofuel. For transport associations interested in partnering with us, or for existing partners needing support.',
+      'Get in touch with Borofuel. For transport companies interested in partnering with us, or for existing partners needing support.',
     images: [
       {
         url: '/logo.jpg',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Contact Borofuel',
     description:
-      'Get in touch with Borofuel. For transport associations interested in partnering with us, or for existing partners needing support.',
+      'Get in touch with Borofuel. For transport companies interested in partnering with us, or for existing partners needing support.',
     images: ['/logo.jpg'],
   },
 };

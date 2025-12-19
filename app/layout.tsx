@@ -10,14 +10,14 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://borofuel.com'),
   title: {
-    default: 'Borofuel - Fuel Access for Transport Associations',
+    default: 'Borofuel - Fuel Service Provider for Drivers',
     template: '%s | Borofuel',
   },
   description:
-    'Connecting approved drivers with designated filling stations for seamless fuel collection. A secure platform for transport associations and their registered drivers.',
+    'Borofuel is a service provider that provides fuel access to registered drivers. Connecting approved drivers with designated filling stations for seamless fuel collection.',
   keywords: [
     'fuel access',
-    'transport associations',
+    'transport companies',
     'fuel management',
     'driver verification',
     'filling stations',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: '/',
     siteName: 'Borofuel',
-    title: 'Borofuel - Fuel Access for Transport Associations',
+    title: 'Borofuel - Fuel Service Provider for Drivers',
     description:
       'Connecting approved drivers with designated filling stations for seamless fuel collection.',
     images: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Borofuel - Fuel Access for Transport Associations',
+    title: 'Borofuel - Fuel Service Provider for Drivers',
     description:
       'Connecting approved drivers with designated filling stations for seamless fuel collection.',
     images: ['/logo.jpg'],

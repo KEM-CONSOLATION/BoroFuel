@@ -33,7 +33,7 @@ export default function About() {
               About <span className="gradient-text">Borofuel</span>
             </h1>
             <p className="text-lg leading-relaxed text-gray-600 sm:text-xl">
-              Connecting transport associations with designated filling stations for seamless fuel
+              Connecting transport companies with designated filling stations for seamless fuel
               access.
             </p>
           </motion.div>
@@ -58,22 +58,21 @@ export default function About() {
             </h2>
             <div className="space-y-6 text-lg leading-relaxed text-gray-700">
               <p>
-                Borofuel is a fuel access and station-partner app designed to streamline the
-                relationship between transport associations and their registered drivers. We provide
-                a secure, efficient platform that connects approved drivers with designated filling
-                stations for seamless fuel collection.
+                Borofuel is a service provider that provides fuel access to registered drivers from
+                transport companies. We provide a secure, efficient platform that connects approved
+                drivers with designated filling stations for seamless fuel collection.
               </p>
               <p>
-                The app is specifically designed for transport associations and their registered
-                drivers. When drivers visit any approved partner filling station, they can
-                authenticate their membership and receive fuel according to the association&apos;s
-                existing arrangements with the station.
+                As a service provider, Borofuel enables drivers from transport companies to access
+                fuel at approved partner filling stations. When drivers visit any approved partner
+                filling station, they can authenticate their membership and receive fuel according
+                to their transport company&apos;s existing arrangements with the station.
               </p>
               <p className="rounded-xl bg-gradient-to-r from-primary-50 to-secondary-50 p-6 font-medium text-gray-800">
                 <Sparkles className="mb-2 inline h-5 w-5 text-primary-600" /> Our system ensures
                 that no cash transactions occur and no personal lending activity takes place.
-                Drivers simply settle their fuel usage through their association&apos;s normal
-                operational process, as managed internally by the association.
+                Drivers simply settle their fuel usage through their transport company&apos;s normal
+                operational process, as managed internally by the company.
               </p>
             </div>
           </motion.div>
@@ -136,7 +135,7 @@ export default function About() {
                 icon: Target,
                 title: 'Our Purpose',
                 description:
-                  'To simplify fuel access for transport associations while maintaining security and accountability.',
+                  'To provide seamless fuel access to drivers while maintaining security and accountability.',
                 gradient: 'from-primary-500 to-primary-600',
                 bgGradient: 'from-orange-50 to-orange-100',
               },
@@ -144,15 +143,14 @@ export default function About() {
                 icon: Users,
                 title: 'Who We Serve',
                 description:
-                  'Transport associations and their registered, verified drivers across partner networks.',
+                  'Registered and verified drivers from transport companies across partner networks.',
                 gradient: 'from-blue-500 to-blue-600',
                 bgGradient: 'from-blue-50 to-blue-100',
               },
               {
                 icon: Shield,
                 title: 'Security First',
-                description:
-                  'Organization ID verification ensures only authorized personnel can access the system.',
+                description: 'ID verification ensures only authorised persons can use the service.',
                 gradient: 'from-secondary-500 to-secondary-600',
                 bgGradient: 'from-green-50 to-green-100',
               },
@@ -199,11 +197,11 @@ export default function About() {
               </h2>
               <ol className="space-y-5 text-lg text-gray-700">
                 {[
-                  'Transport associations register with Borofuel and provide their approved driver list.',
-                  'Drivers receive their Organization ID Number from their association.',
+                  'Transport companies register with Borofuel and provide their approved driver list.',
+                  'Drivers receive their Organization ID Number from their transport company.',
                   'Drivers visit any approved partner filling station and authenticate using their Organization ID.',
-                  "Fuel is provided according to the association's arrangements with the station.",
-                  "Settlement is handled through the association's normal operational process.",
+                  'Borofuel provides fuel according to the transport company&apos;s arrangements with the station.',
+                  "Settlement is handled through the transport company's normal operational process.",
                 ].map((step, index) => (
                   <motion.li
                     key={index}

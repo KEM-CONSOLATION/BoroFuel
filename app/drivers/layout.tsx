@@ -3,11 +3,11 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Driver Portal',
   description:
-    'Access your Borofuel driver portal with your Organization ID. Verified drivers from partner transport associations can access fuel at approved filling stations.',
+    'Access your Borofuel driver portal with your Organization ID. Borofuel provides fuel access to verified drivers from partner transport companies at approved filling stations.',
   openGraph: {
     title: 'Driver Portal - Borofuel',
     description:
-      'Access your Borofuel driver portal with your Organization ID. Verified drivers from partner transport associations can access fuel at approved filling stations.',
+      'Access your Borofuel driver portal with your Organization ID. Borofuel provides fuel access to verified drivers from partner transport companies at approved filling stations.',
     images: [
       {
         url: '/logo.jpg',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Driver Portal - Borofuel',
     description:
-      'Access your Borofuel driver portal with your Organization ID. Verified drivers from partner transport associations can access fuel at approved filling stations.',
+      'Access your Borofuel driver portal with your Organization ID. Borofuel provides fuel access to verified drivers from partner transport companies at approved filling stations.',
     images: ['/logo.jpg'],
   },
 };

@@ -44,7 +44,7 @@ export default function Privacy() {
               <h2 className="mb-4 text-xl font-bold text-gray-900 sm:text-2xl">Introduction</h2>
               <p className="text-gray-700">
                 Borofuel provides a fuel access service that allows verified drivers from transport
-                associations to obtain fuel at approved partner stations quickly and securely. This
+                companies to obtain fuel at approved partner stations quickly and securely. This
                 policy explains how the system operates, how data is managed, and the rules guiding
                 all users.
               </p>
@@ -102,14 +102,10 @@ export default function Privacy() {
               </h2>
               <ul className="ml-6 list-disc space-y-2 text-gray-700">
                 <li>Every approved driver can request fuel at partner stations through the app.</li>
-                <li>
-                  Drivers access fuel according to their association&apos;s operational process.
-                </li>
+                <li>Drivers access fuel according to their company&apos;s operational process.</li>
                 <li>Each fuel request generates a one-time authorization code for security.</li>
                 <li>Fueling must be confirmed by both the driver and station attendant.</li>
-                <li>
-                  Drivers are expected to settle their fuel usage as managed by the association.
-                </li>
+                <li>Drivers are expected to settle their fuel usage as managed by the company.</li>
                 <li>
                   Accounts may be temporarily restricted from fuel access in case of misuse or
                   unapproved activity.
