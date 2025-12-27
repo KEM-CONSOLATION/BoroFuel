@@ -1,13 +1,14 @@
 # Netlify configuration for Next.js
 [build]
   command = "npm run build"
-  publish = ".next/standalone"
+  publish = ".next"
 
 # Install all dependencies (including devDependencies) for build
 [build.environment]
   NODE_VERSION = "18"
 
 # Next.js settings - use the official Netlify Next.js plugin
+# This plugin automatically handles Next.js deployment
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
