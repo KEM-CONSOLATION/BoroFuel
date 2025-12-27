@@ -1,19 +1,30 @@
 import type { Metadata } from 'next';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://borofuel.org';
+const logoUrl = `${siteUrl}/logo.jpg`;
+
 export const metadata: Metadata = {
   title: 'Driver Portal',
   description:
     'Access your Borofuel driver portal with your Organization ID. Borofuel provides fuel access to verified drivers from partner transport companies at approved filling stations.',
+  alternates: {
+    canonical: `${siteUrl}/drivers`,
+  },
   openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: `${siteUrl}/drivers`,
+    siteName: 'Borofuel',
     title: 'Driver Portal - Borofuel',
     description:
       'Access your Borofuel driver portal with your Organization ID. Borofuel provides fuel access to verified drivers from partner transport companies at approved filling stations.',
     images: [
       {
-        url: '/logo.jpg',
-        width: 1200,
-        height: 630,
+        url: logoUrl,
+        width: 1024,
+        height: 1024,
         alt: 'Borofuel Logo',
+        type: 'image/jpeg',
       },
     ],
   },
@@ -22,7 +33,11 @@ export const metadata: Metadata = {
     title: 'Driver Portal - Borofuel',
     description:
       'Access your Borofuel driver portal with your Organization ID. Borofuel provides fuel access to verified drivers from partner transport companies at approved filling stations.',
-    images: ['/logo.jpg'],
+    images: [logoUrl],
+  },
+  robots: {
+    index: false,
+    follow: true,
   },
 };
 

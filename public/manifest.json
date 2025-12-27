@@ -1,0 +1,21 @@
+{
+  "name": "Borofuel - Fuel Service Provider",
+  "short_name": "Borofuel",
+  "description": "Fuel access and station-partner app that connects approved drivers with designated filling stations",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "1024x1024",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en-US",
+  "dir": "ltr"
+}
