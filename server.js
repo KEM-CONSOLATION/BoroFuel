@@ -7,7 +7,7 @@ const hostname = process.env.HOSTNAME || 'localhost';
 const port = parseInt(process.env.PORT || '3000', 10);
 
 // Create the Next.js app
-const app = next({ 
+const app = next({
   dev,
   hostname,
   port,
@@ -20,7 +20,7 @@ app.prepare().then(() => {
     try {
       // Parse the request URL
       const parsedUrl = parse(req.url, true);
-      
+
       // Handle the request
       await handle(req, res, parsedUrl);
     } catch (err) {
@@ -34,4 +34,3 @@ app.prepare().then(() => {
     console.log(`> Environment: ${process.env.NODE_ENV || 'development'}`);
   });
 });
-
